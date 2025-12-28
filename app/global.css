@@ -3,6 +3,7 @@
 @import "fumadocs-ui/css/preset.css";
 
 @theme {
+  --spacing-page: 1024px;
   /* TODO: ライトのカラーテーマは見直したい */
   --color-fd-primary: hsl(25 95% 40%);
 }
