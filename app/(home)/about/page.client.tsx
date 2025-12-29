@@ -11,7 +11,7 @@ const GrainGradient = dynamic(
   },
 );
 
-export function Hero() {
+export function Gimmick() {
   const { resolvedTheme } = useTheme();
   const ref = useRef<HTMLImageElement | null>(null);
   const visible = useIsVisible(ref);
@@ -31,16 +31,17 @@ export function Hero() {
           className="absolute inset-0 animate-fd-fade-in duration-800"
           colors={
             resolvedTheme === "dark"
-              ? ["#ff8800", "#ff6b6b", "#ff99aa", "#cc5577"]
-              : ["#f25208", "#e63946", "#ff88aa", "#c9184a"]
+              ? ["#ff8800", "#ff6b6b", "#ff99aa"]
+              : ["#f25208", "#e63946", "#ff88aa"]
           }
           colorBack={resolvedTheme === "dark" ? "#121212" : "#fff"}
-          softness={0.8}
-          intensity={0.6}
-          noise={0.8}
-          shape="corners"
-          speed={0.6}
-          scale={1.1}
+          softness={0.5}
+          intensity={0.5}
+          noise={0.5}
+          shape="sphere"
+          speed={2}
+          scale={0.4}
+          rotation={1}
           offsetX={0}
           offsetY={0}
         />
